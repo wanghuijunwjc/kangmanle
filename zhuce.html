@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.11.3.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/zhuce.css">
+	</head>
+	<body>
+		<!--*****header******-->
+		<header>
+			<div>
+				<img src="img/1.jpg">
+				<a href="">收藏康满乐</a>
+				<ul>
+					<li>您好！ 欢迎光临本店！<a href="login.html">[登录]</a> <a href="zhuce.html">[会员注册]</a></li>
+					<li>|</li>
+					<li><a href="dingdan.html">我的订单</a></li>
+					<li>|</li>
+					<li  id="fuwu">客户服务<span> &or;</span>
+						<ol>
+							<li><a href="">售后服务</a></li>					
+							<li><a href="">在线服务</a></li>					
+							<li><a href="">联系我们</a></li>
+							<li><a href="">投诉中心</a></li>
+						</ol>
+					</li>
+					
+					<li>|</li>
+					<li id="daohang">网站导航 <span>&or;</span>
+						<ol>
+							<div>
+							<li><strong>特色栏目</strong></li>
+							<li><a href="">Vip直通车</a></li>
+							<li><a href="">三折区</a></li>
+							<li><a href="">折扣区</a></li>
+							<li><a href="">平价区</a></li>
+							<li><a href="">行业资讯</a></li></div>
+							<div>
+							<li><strong>特色产品</strong></li>
+							<li><a href="">搜乐洗衣液</a></li>
+							<li><a href="">搜乐卫生巾</a></li>
+							<li><a href="">折搜乐洗手液</a></li></div>
+						</ol>
+						
+					</li>
+				</ul>
+			</div>
+		</header>
+		<nav>
+			<img src="img/zcbanner.jpg">
+		</nav>
+		
+<!--**************用户注册****************-->
+		<aside>
+			<div>
+				<div>
+					<span>新用户注册</span>
+					<span>我已经注册，现在就 <a href="login.html">登录</a></span>
+				</div>
+				<div>
+					<p>联系客服开通VIP会员即可查看"行业资讯"栏目内增值内容,5元/月,超值!!</p>
+					<p>填写账户信息，以下信息均为必填：</p>
+</p>
+					<b>用户名：</b><input type="text" id="user"> <span id="span1">*请使用英文注册，否则可能因为乱码而被删除</span><br>	
+					<b>登陆密码:</b><input type="text" id="pass"/><span id="span2"> * 6－20位字符，可由大小写英文、数字或符号组成</span><br>
+					<b>email:</b><input type="text" id="email"><span id="span3"> 输入有效邮箱地址并成功激活，可用此邮箱做为登录账号及找回密码</span><br>
+					<b>密码强度:</b>
+						<ul>
+							<span>弱</span><span>中</span><span>强</span><br>
+							<ol id="qiangdu">
+								<li id="li1"></li>
+								<li id="li2"></li>
+								<li id="li3"></li>
+							</ol>
+						</ul>
+					 <b>确认密码:</b><input type="text" id="pass2"/><span id="span5">* 再次输入密码</span><br>
+					 <b>身份证:</b><input type="text" id="idcart"/><span id="span6">* 请输入您的真实身份证号码（您的年龄必须在22~60周岁之间）</span><br>
+					 <b>手机:</b><input type="text" id="phone"/><span id="span7"></span><br>
+					 <b>密码提示问题:</b><select id="question">
+							 				<option checked="checked">请选择密码提示问题</option>
+							 				<option>我儿时居住的地址</option>
+							 				<option>我最好朋友的生日</option>
+							 				<option>我儿时居住的地址</option>
+							 				<option>我的座右铭</option>
+					 					</select><br>
+					<b>密码问题答案:</b><input type="text" id="answer"/><br>
+					<b>地址:</b><input type="text" id="address"/><br>
+					<input type="checkbox" checked="checked" style="width: 0;height:0;margin-left: 90px;"/>我已看过并接受《用户协议》<br>
+				
+					<!--<div id="btn" style="margin-left: 90px;"><img src="img/bnt_ur_reg.gif"></div>-->
+					<button id="btn"style="margin-left: 90px; width:170px; height:29px; border:none;"><img src="img/bnt_ur_reg.gif"></button>
+					<ol>
+						<li><a href="login.html">我已有账号，我要登录</a></li>
+						<li><a href="">您忘记密码了吗？</a></li>
+					</ol>
+				</div>
+			</div>
+		</aside>
+		
+		<!--******************footer**************************-->
+		<footer>
+			<div>
+				<img src="img/footer1.jpg">
+				<img src="img/footer2.jpg">
+				<img src="img/footer3.jpg">
+				<img src="img/footer4.jpg">
+			</div>
+			<div>
+				<ul>
+					<li>联系我们</li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">网站故障报告</a></li>
+					<li><a href="">选购咨询</a></li>
+					<li><a href="">投诉与建议</a></li>
+				</ul>
+				<ul>
+					<li>新手上路</li>
+					<li><a href="">购物流程</a></li>
+					<li><a href="">如何注册</a></li>
+					<li><a href="">康满乐介绍</a></li>
+					<li><a href="">资费标准</a></li>
+				</ul>
+				<ul>
+					<li>商品管理</li>
+					<li><a href="">上架总则</a></li>
+					<li><a href="">上架细则</a></li>
+					<li><a href="">下架细则</a></li>
+				</ul>
+				<ul>
+					<li>配送与支付</li>
+					<li><a href="">货到付款区域</a></li>
+					<li><a href="">配送方式说明</a></li>
+					<li><a href="">支付方式说明</a></li>
+				</ul>
+				<ul>
+					<li>服务保证</li>
+					<li><a href="">退换货原则</a></li>
+					<li><a href="">售后服务保证</a></li>
+					<li><a href="">产品质量保证</a></li>
+					<li><a href="">退换货流程</a></li>
+				</ul>
+			</div>
+			<div>
+				<span>Copyright&copy;2017康满乐商城  浙ICP备16026032号-2 </span>
+				<a href=""><img src="img/zhan.gif"></a>
+			</div>
+			<div>
+				<a href=""><img src="img/cnnic.png"></a>
+				<a href=""></a>
+				<a href=""></a>
+			</div>
+		</footer>
+		
+	</body>
+</html>
+<script>
+	var fuwu=document.getElementById("fuwu");
+	var ol=fuwu.getElementsByTagName("ol")[0];
+	var span=fuwu.getElementsByTagName("span")[0];
+	var daohang=document.getElementById("daohang");
+	var ols=daohang.getElementsByTagName("ol")[0];
+	var spans=daohang.getElementsByTagName("span")[0];
+	fuwu.onmouseover=function(event){
+		event=event||window.event;
+		ol.style.display="block";
+		fuwu.style.background="#fff";
+		span.innerHTML="&and;"
+		ol.style.zIndex=10;
+		document.onmouseout=function(){
+			ol.style.display="none";
+			fuwu.style.background="none";
+			span.innerHTML="&or;"
+		}
+	}
+	daohang.onmouseover=function(event){
+		event=event||window.event;
+		ols.style.display="block";
+		daohang.style.background="#fff";
+		spans.innerHTML="&and;"
+		ols.style.zIndex=10;
+		document.onmouseout=function(){
+			ols.style.display="none";
+			daohang.style.background="none";
+			spans.innerHTML="&or;"
+		}
+	}
+	
+//对注册信息的验证
+	
+	
+
+//用户名的验证 
+	var arr=[false,false,false,false,false,false];
+	var strName=document.getElementById("user");
+	strName.onblur=function(){
+		var Name=strName.value;
+		var l= Name.length;
+		span1.innerHTML=" *请使用英文注册，否则可能因为乱码而被删除！";
+		if(l<4){
+			span1.innerHTML="- 用户名长度不能少于 3 个字符。";
+			arr[0]=false;
+		}else{
+			span1.innerHTML="允许注册";
+			arr[0]=true;
+			//arr.push(flag);
+			//console.log(arr);
+		}
+	};
+
+
+//邮箱的验证
+	var strEmail=document.getElementById("email");
+	strEmail.onblur=function(){
+		var Email=strEmail.value;
+		span3.innerHTML=" 输入有效邮箱地址并成功激活，可用此邮箱做为登录账号及找回密码";
+		if(/^[a-z\d]+(\.[a-z\d]+)*@([\da-z](-[\da-z])?)+(\.{1,2}[a-z]+)+$/.test(Email)==false){
+			span3.innerHTML=" * 邮件地址不合法";
+			arr[1]=false;;
+		}else{
+			span3.innerHTML=" * 邮件地址合法";
+			arr[1]=true;
+			//arr.push(flag);
+		}
+	}
+	
+	
+	//登录密码的验证
+	var strPass=document.getElementById("pass");
+	strPass.onblur=function(){
+		var Mima=strPass.value;
+		var l=Mima.length;
+		span2.innerHTML=" * 6－20位字符，可由大小写英文、数字或符号组成";
+		if(/^[a-zA-Z0-9_-]{6,20}$/.test(Mima)==false){
+			span2.innerHTML="请输入6到20 位密码";
+			arr[2]=false;
+		}else{
+			span2.innerHTML="可以注册";
+			arr[2]=true;
+			//arr.push(flag);
+			//console.log(arr);
+		}
+	}
+	
+	//密码强度显示
+		strPass.onkeyup=function(){
+			var ols=document.getElementById("qiangdu");
+			ols.style.display="block";
+			var Mima=strPass.value;
+			var l=Mima.length;
+			var n=0;
+			var arr=[false,false,false];
+			for(var i=0;i<l;i++){
+				var chr=Mima.charCodeAt(i);
+				if (chr>=97 && chr<=122){
+						arr[0] = true;
+					}else if (chr>=65 && chr<=90) {	
+						arr[1] = true;
+					}else if(chr>=48 && chr<=57) {	
+						arr[2] = true;	
+					}
+				}
+			for(var i=0;i<arr.length;i++){
+				if(arr[i]){
+					n++;	
+				}	
+			}
+			switch (n){
+				case 1:	
+					eval("li"+1).style.background="red";
+					break;
+				case 2: 
+					eval("li"+1).style.background="";
+					eval("li"+2).style.background="orange";
+					break;
+				case 3: 
+					eval("li"+2).style.background="";
+					eval("li"+3).style.background="green";
+			}
+		}
+	//确认密码
+	var strPass2=document.getElementById("pass2");
+	strPass2.onblur=function(){
+		var Mima2=strPass2.value;
+		var Mima=strPass.value;
+		span5.innerHTML=" * 再次输入密码。"
+		if(Mima2!=Mima){
+			span5.innerHTML="密码不一致";
+			arr[3]=false;
+		}
+		if(Mima2==Mima){
+			span5.innerHTML="可以注册";
+			arr[3]=true;
+			//arr.push(flag);
+			//console.log(arr);
+		}
+	}
+	
+	//身份证验证
+	var strIdcart=document.getElementById("idcart");
+	strIdcart.onblur=function(){
+		var idNum=strIdcart.value;
+		span6.innerHTML=" * 请输入您的真实身份证号码（您的年龄必须在22~60周岁之间）";
+		if(/^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/.test(idNum)==false){
+			span6.innerHTML="请输入正确的身份证号码";
+			arr[4]=false;;
+		}else{
+			span6.innerHTML="可以注册";	
+			arr[4]=true;
+			//arr.push(flag);
+			//console.log(arr);
+		}
+	}
+	
+	//手机号的验证
+	var strPhone=document.getElementById("phone");
+	strPhone.onblur=function(){
+		span7.innerHTML="";
+		var phoneNum=strPhone.value;
+		if(/^((\(\d{2,3}\))|(\d{3}\-))?1[3,8,5]{1}\d{9}$/.test(phoneNum)==false){
+			span7.innerHTML="请输入11位正确的手机号";
+			arr[5]=false;
+		}else{
+			alert("正确");
+			arr[5]=true;	
+			//arr.push(flag);
+			//console.log(arr);
+		}
+	}
+	
+	$(function(){
+		$("#btn").css({cursor:"pointer"}).click(function(){
+			var n=0;
+			for(var i=0;i<arr.length;i++){
+				if(arr[i]==true){
+					n++;
+				}
+			}
+			if(n==6){
+				//接收输入的注册值
+				var struser = $("#user").val();
+				var strpass = $("#pass").val();
+				var stremail =  $("#email").val();
+				var strids = $("#idcart").val();
+				var strphone = $("#phone").val();
+				var strquestion = $("#question").val();
+				var stranswer = $("#answer").val();
+				var straddress = $("#address").val();
+				if( struser!="" && strpass!="" && stremail!="" && strids!=""&& strphone!="" && strquestion!="" &&stranswer!="" && straddress!=""){
+					var url = "js/chk.php";
+					$.post(url, {"ac":0, "username":struser, 
+					"password":strpass, "useremail":stremail,
+					"userids":strids, "userphone":strphone,
+					"userquestion":strquestion, "useranswer":stranswer,
+					"useraddress":straddress}, function(str){
+					//alert(str);
+						var obj = JSON.parse(str);
+						if( obj.state == "success" ){
+							alert(obj.text+"\r\n用户编号："+obj.userid);
+							location.href="login.html";
+						}else{
+							alert(obj.text);
+						}
+					});
+				}
+			}else{
+				alert("请检查信息");
+			}
+		});
+		
+	});
+
+</script>

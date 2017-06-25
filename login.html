@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+	</head>
+	<body>
+		<!--*****header******-->
+		<header>
+			<div>
+				<img src="img/1.jpg">
+				<a href="">收藏康满乐</a>
+				<ul>
+					<li>您好！ 欢迎光临本店！<a href="login.html">[登录]</a> <a href="zhuce.html">[会员注册]</a></li>
+					<li>|</li>
+					<li><a href="dingdan.html">我的订单</a></li>
+					<li>|</li>
+					<li  id="fuwu">客户服务<span> &or;</span>
+						<ol>
+							<li><a href="">售后服务</a></li>					
+							<li><a href="">在线服务</a></li>					
+							<li><a href="">联系我们</a></li>
+							<li><a href="">投诉中心</a></li>
+						</ol>
+					</li>
+					
+					<li>|</li>
+					<li id="daohang">网站导航 <span>&or;</span>
+						<ol>
+							<div>
+							<li><strong>特色栏目</strong></li>
+							<li><a href="">Vip直通车</a></li>
+							<li><a href="">三折区</a></li>
+							<li><a href="">折扣区</a></li>
+							<li><a href="">平价区</a></li>
+							<li><a href="">行业资讯</a></li></div>
+							<div>
+							<li><strong>特色产品</strong></li>
+							<li><a href="">搜乐洗衣液</a></li>
+							<li><a href="">搜乐卫生巾</a></li>
+							<li><a href="">折搜乐洗手液</a></li></div>
+						</ol>
+						
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!--**********login***********-->
+		<nav>
+			<div>
+				用户名<br>
+				<input type="text" id="username"><br>
+				登录密码<br>
+				<input type="password" id="userpass"><br>
+				<a href="">忘记密码？</a>
+				<input type="button" value="登录" id="login">
+				<span>
+					<a href="zhuce.html">会员注册</a>
+			    </span>
+				
+			</div>	
+		</nav>
+<!--******************footer**************************-->
+		<footer>
+			<div>
+				<img src="img/footer1.jpg">
+				<img src="img/footer2.jpg">
+				<img src="img/footer3.jpg">
+				<img src="img/footer4.jpg">
+			</div>
+			<div>
+				<ul>
+					<li>联系我们</li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">网站故障报告</a></li>
+					<li><a href="">选购咨询</a></li>
+					<li><a href="">投诉与建议</a></li>
+				</ul>
+				<ul>
+					<li>新手上路</li>
+					<li><a href="">购物流程</a></li>
+					<li><a href="">如何注册</a></li>
+					<li><a href="">康满乐介绍</a></li>
+					<li><a href="">资费标准</a></li>
+				</ul>
+				<ul>
+					<li>商品管理</li>
+					<li><a href="">上架总则</a></li>
+					<li><a href="">上架细则</a></li>
+					<li><a href="">下架细则</a></li>
+				</ul>
+				<ul>
+					<li>配送与支付</li>
+					<li><a href="">货到付款区域</a></li>
+					<li><a href="">配送方式说明</a></li>
+					<li><a href="">支付方式说明</a></li>
+				</ul>
+				<ul>
+					<li>服务保证</li>
+					<li><a href="">退换货原则</a></li>
+					<li><a href="">售后服务保证</a></li>
+					<li><a href="">产品质量保证</a></li>
+					<li><a href="">退换货流程</a></li>
+				</ul>
+			</div>
+			<div>
+				<span>Copyright&copy;2017康满乐商城  浙ICP备16026032号-2 </span>
+				<a href="http://new.cnzz.com/v1/login.php?siteid=1261299469"><img src="img/zhan.gif"></a>
+			</div>
+			<div>
+				<a href=""><img src="img/cnnic.png"></a>
+				<a href=""></a>
+				<a href=""></a>
+			</div>
+		</footer>
+	</body>
+</html>
+<script src="js/startMove.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/query.js"></script>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+var fuwu=document.getElementById("fuwu");
+var ol=fuwu.getElementsByTagName("ol")[0];
+var span=fuwu.getElementsByTagName("span")[0];
+var daohang=document.getElementById("daohang");
+var ols=daohang.getElementsByTagName("ol")[0];
+var spans=daohang.getElementsByTagName("span")[0];
+fuwu.onmouseover=function(event){
+	event=event||window.event;
+	ol.style.display="block";
+	fuwu.style.background="#fff";
+	span.innerHTML="&and;"
+	ol.style.zIndex=10;
+	document.onmouseout=function(){
+		ol.style.display="none";
+		fuwu.style.background="none";
+		span.innerHTML="&or;"
+	}
+}
+daohang.onmouseover=function(event){
+	event=event||window.event;
+	ols.style.display="block";
+	daohang.style.background="#fff";
+	spans.innerHTML="&and;"
+	ols.style.zIndex=10;
+	document.onmouseout=function(){
+		ols.style.display="none";
+		daohang.style.background="none";
+		spans.innerHTML="&or;"
+	}
+}
+
+/*----------------登录框-------------------*/
+var arr;
+var username=document.getElementById("username");
+var userpass= document.getElementById("userpass");
+var login=document.getElementById("login");
+login.onclick=function(){
+	var struser=username.value;//获取输入的用户名密码
+	var strpass=userpass.value;
+	if( struser!="" && strpass!=""){
+			var url = "js/chk1.php";
+			$.post(url, {"ac":1, "username":struser, 
+			"password":strpass}, function(str){
+				var obj = JSON.parse(str);//返回的查询值
+				if( obj.state == "success" ){
+					alert(obj.text);
+					location.href="index.html";
+					setCookie("username",struser,1);
+					setCookie("password",strpass,1);
+				}else{
+					alert(obj.text);
+				}
+			});
+		}
+	}
+</script>
